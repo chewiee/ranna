@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/chewiee/ranna/issues"
   },
-  "homepage": "https://github.com/chewiee/ranna#readme"
+  "homepage": "https://github.com/chewiee/ranna#readme",
+  "dependencies": {
+    "bootstrap": "^3.4.1"
+  }
 }
