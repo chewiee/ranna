@@ -1,0 +1,19 @@
+{
+  "name": "ranna",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chewiee/ranna.git"
+  },
+  "author": "ranna bansal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chewiee/ranna/issues"
+  },
+  "homepage": "https://github.com/chewiee/ranna#readme"
+}
