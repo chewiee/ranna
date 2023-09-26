@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'bookclerb.apps.BookclerbConfig',
+    'polls.apps.PollsConfig',
     
     'django.contrib.admin',
     'django.contrib.auth',
