@@ -3,7 +3,8 @@
     <meta charset="utf-8">
 
     <title>Ranna</title>
-    <meta name="description" content="aka the cookie genius">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="What do websites even do?">
     <meta name="author" content="Ranna Bansal">
 
     <!-- Bootstrap -->
@@ -12,22 +13,25 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!-- Favicon -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#128583;&#127998;</text></svg>">
 
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
 
 </head>
 
-<body>
+<body class="text-center" onload="onload()">
+
+    <video id="background-video" autoplay loop muted >
+        <source type="video/mp4">
+    </video>
 
     <div class="container" role="main">
         <div class="text-center">
             <h1>
                 Ranna Bansal
             </h1>
-            <div id="pot">
-                <img src="./face.png" class="img-fluid" alt="rannaface.png">
-            </div>
             <div style="padding-top: 20px; margin:auto; width: 200px;">
                 <a href="./Bansal Resume.pdf" class="btn btn-block btn-success" target="_blank" type="application/pdf">
                     <i class="fa fa-download"></i>
@@ -36,7 +40,7 @@
                 </a>
             </div>
 
-            <div style="padding-top: 20px; margin:auto; width: 200px;">
+            <div style="padding-top: 20px; padding-bottom: 20px; margin:auto; width: 200px;">
                 <a href="https://github.com/chewiee/ranna" class="btn btn-block btn-primary" target="_blank" type="application/pdf">
                     <i class="fa fa-github"></i>
                     &emsp;
