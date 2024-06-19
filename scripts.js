@@ -6,6 +6,10 @@ function onload() {
     setRandomBackgroundVideo();
 }
 
+function chooseRandomFromArray(arr) {
+    return arr[Math.floor(Math.random() * arr.length)];
+}
+
 function setRandomRannaFaceAnimation() {
     var rannaFace = document.getElementById("ranna-face");
 
@@ -13,11 +17,19 @@ function setRandomRannaFaceAnimation() {
         'left-right-bounce',
     ]
 
-    const randomRannaFaceStyle = rannaFaceStyles[Math.floor(Math.random() * rannaFaceStyles.length)]
-    console.info('Chose Ranna Face Style: ' + randomRannaFaceStyle)
-    rannaFace.setAttribute('id', randomRannaFaceStyle)
+    const randomRannaFaceStyle = chooseRandomFromArray(rannaFaceStyles);
+    console.info('Chose Ranna Face Style: ' + randomRannaFaceStyle);
+    rannaFace.classList.add(randomRannaFaceStyle);
 }
 
 function setRandomBackgroundVideo() {
-   console.info(process.env.derp)
+    var backgroundVideo = document.getElementById("background-video");
+
+    const backgroundVideos = [
+        './sky.mp4',
+    ]
+
+    const randomBackgroundVideo = chooseRandomFromArray(backgroundVideos);
+    console.info('Chose Background Video: ' + randomBackgroundVideo);
+    backgroundVideo.setAttribute('src', randomBackgroundVideo);
 }

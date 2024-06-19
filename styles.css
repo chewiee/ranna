@@ -4,7 +4,7 @@
   z-index: 900;
 }
 
-#left-right-bounce {
+.left-right-bounce {
     bottom: 15%;
     position: absolute;
     -webkit-animation: linear infinite;
