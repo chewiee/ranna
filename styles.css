@@ -1,29 +1,25 @@
 
 
 #ranna-face {
+  bottom: 10vh;
   z-index: 900;
-  height: 20vh;
+  width: 20vw;
+  max-height: 
 }
 
 .left-right-bounce {
-    bottom: 15%;
     position: absolute;
-    -webkit-animation: linear infinite;
-    -webkit-animation-name: run;
-    -webkit-animation-duration: 5s;
-  }
+    animation: left-right-bounce 5s infinite alternate;
+}
 
-  @-webkit-keyframes run {
+@keyframes left-right-bounce {
     0% {
-      left: 0;
-    }
-    50% {
-      left: calc(100% - 282px);
+        left: 0;
     }
     100% {
-      left: 0;    
+        left: 80vw;
     }
-  }
+}
 
   #background-video {
     width: 100vw;
