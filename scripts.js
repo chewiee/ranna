@@ -20,7 +20,9 @@ function setRandomRannaFaceAnimation() {
 
     const randomRannaFaceStyle = chooseRandomFromArray(rannaFaceStyles);
     console.info('Chose Ranna Face Style: ' + randomRannaFaceStyle);
-    rannaFace.classList.add(randomRannaFaceStyle);
+    if (rannaFace !== null) {
+        rannaFace.classList.add(randomRannaFaceStyle);
+    }
 }
 
 function setRandomBackgroundVideo() {
