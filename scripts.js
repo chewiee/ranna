@@ -15,7 +15,7 @@ function setRandomRannaFaceAnimation() {
 
     const rannaFaceStyles = [
         'left-right-bounce',
-        'left-right-bounce2',
+        'pulse','fade-in', 'float'
     ]
 
     const randomRannaFaceStyle = chooseRandomFromArray(rannaFaceStyles);
