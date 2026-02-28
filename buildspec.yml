@@ -1,0 +1,23 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 20
+  build:
+    commands:
+      - echo "Build started on `date`"
+      - echo "Verifying files..."
+      - ls -la
+  post_build:
+    commands:
+      - echo "Build completed on `date`"
+
+artifacts:
+  files:
+    - index.html
+    - styles.css
+    - scripts.js
+    - error.html
+    - LICENSE
+  discard-paths: no
